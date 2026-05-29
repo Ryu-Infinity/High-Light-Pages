@@ -547,12 +547,31 @@ a {
   opacity: 0.95;
 }
 
+.cta-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .cta .btn-primary {
   background: #fff;
   color: var(--pink);
 }
 
 .cta .btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.cta .btn-ghost {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+
+.cta .btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.25);
   transform: translateY(-2px);
 }
 
