@@ -473,14 +473,159 @@ a {
    ============================================================ */
 
 .features {
-  padding: 100px 0;
+  padding: 100px 0 60px;
   background: var(--surface);
+}
+
+/* ===== Spotlight（左右交互の大型機能紹介） ===== */
+
+.spotlight {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+  padding: 80px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.spotlight:last-of-type {
+  border-bottom: none;
+}
+
+.spotlight.reversed .spotlight-text {
+  order: 2;
+}
+
+.spotlight.reversed .spotlight-image {
+  order: 1;
+}
+
+@media (max-width: 880px) {
+  .spotlight {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 60px 0;
+  }
+  .spotlight.reversed .spotlight-text,
+  .spotlight.reversed .spotlight-image {
+    order: initial;
+  }
+}
+
+.spotlight-label {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: var(--pink);
+  padding: 6px 14px;
+  border: 1.5px solid var(--pink);
+  border-radius: var(--radius-pill);
+  margin-bottom: 24px;
+}
+
+.spotlight-title {
+  font-size: clamp(28px, 4.5vw, 44px);
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+.spotlight-lead {
+  font-size: clamp(15px, 1.6vw, 17px);
+  color: var(--text-soft);
+  margin-bottom: 28px;
+  line-height: 1.9;
+}
+
+.spotlight-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.spotlight-list li {
+  position: relative;
+  padding: 12px 0 12px 28px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-soft);
+  border-top: 1px solid var(--border);
+}
+
+.spotlight-list li:first-child {
+  border-top: none;
+}
+
+.spotlight-list li::before {
+  content: '◆';
+  position: absolute;
+  left: 0;
+  top: 12px;
+  font-size: 12px;
+  color: var(--pink);
+}
+
+.spotlight-list li strong {
+  color: var(--text);
+  font-weight: 800;
+  margin-right: 8px;
+}
+
+/* スポットライトのスマホフレーム */
+.phone-tilt {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  aspect-ratio: 9 / 19.5;
+  border-radius: 36px;
+  overflow: hidden;
+  border: 10px solid #1A1A2E;
+  background: #000;
+  box-shadow: 0 30px 80px rgba(255, 59, 154, 0.20),
+              0 10px 30px rgba(20, 20, 40, 0.15);
+  transform: rotate(-2deg);
+  transition: transform 0.4s ease;
+}
+
+.spotlight.reversed .phone-tilt {
+  transform: rotate(2deg);
+}
+
+.phone-tilt:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+
+.phone-tilt img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== Features Extra（補助機能の小型グリッド） ===== */
+
+.features-extra {
+  padding: 80px 0 0;
+  text-align: center;
+}
+
+.extra-title {
+  font-size: clamp(20px, 2.5vw, 26px);
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: var(--text);
+  letter-spacing: -0.01em;
 }
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
+  text-align: left;
 }
 
 .feature-card {
@@ -513,7 +658,8 @@ a {
   line-height: 1;
 }
 
-.feature-card h3 {
+.feature-card h3,
+.feature-card h4 {
   font-size: 18px;
   font-weight: 800;
   margin-bottom: 10px;
