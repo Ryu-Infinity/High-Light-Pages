@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FF3B9A" />
+
+  <title>High Light! — ライブの記憶を、すべて残そう。</title>
+  <meta name="description" content="ライブ参戦記録、セトリ管理、統計、座席表、SNSシェアまで。あなたのライブ史を美しく残すiOSアプリ「High Light!」近日リリース。" />
+
+  <!-- OGP -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="High Light! — ライブの記憶を、すべて残そう。" />
+  <meta property="og:description" content="ライブ参戦記録・セトリ管理・座席表・SNSシェア。あなたのライブ史を美しく残すiOSアプリ。" />
+  <meta property="og:image" content="assets/app-icon.png" />
+  <meta property="og:url" content="https://ryu-infinity.github.io/High-Light-App/" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@highlight_lives" />
+  <meta name="twitter:title" content="High Light! — ライブの記憶を、すべて残そう。" />
+  <meta name="twitter:description" content="ライブ参戦記録・セトリ管理・座席表・SNSシェア。あなたのライブ史を美しく残すiOSアプリ。" />
+  <meta name="twitter:image" content="assets/app-icon.png" />
+
+  <link rel="icon" type="image/png" href="assets/app-icon.png" />
+  <link rel="apple-touch-icon" href="assets/app-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== ヘッダー ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand">
+        <img src="assets/app-icon.png" alt="High Light!" />
+        <span>High Light!</span>
+      </a>
+      <nav class="nav">
+        <a href="#features">機能</a>
+        <a href="#screenshots">画面</a>
+        <a href="#why">魅力</a>
+        <a href="https://x.com/highlight_lives" target="_blank" rel="noopener" class="nav-x">𝕏 公式</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== ヒーロー ========== -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="badge">iOS App · 近日リリース</span>
+        <h1>
+          ライブの記憶を、<br />
+          <span class="gradient-text">すべて残そう。</span>
+        </h1>
+        <p class="hero-lead">
+          参戦したライブを記録し、セトリを残し、思い出を振り返る。<br />
+          あなたのライブ史を、美しく、特別に。
+        </p>
+        <div class="hero-cta">
+          <a href="https://x.com/highlight_lives" target="_blank" rel="noopener" class="btn btn-primary">
+            𝕏 で最新情報を受け取る
+          </a>
+          <a href="#features" class="btn btn-ghost">機能を見る ↓</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="phone-stack">
+          <div class="phone phone-bg"><img src="assets/screenshots/home.png" alt="" /></div>
+          <div class="phone phone-front"><img src="assets/screenshots/setlist.png" alt="" /></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== アプリ概要 ========== -->
+  <section class="intro">
+    <div class="container">
+      <p class="intro-text">
+        ライブの後、しばらく経つと忘れてしまう感情やセトリ。<br />
+        <strong>High Light!</strong> は、そんな大切な瞬間を<br class="sp-only" />
+        美しく残すためのアプリです。
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== 機能 ========== -->
+  <section id="features" class="features">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-label">FEATURES</span>
+        記録から共有まで、すべてが揃う。
+      </h2>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎟️</div>
+          <h3>ライブ参戦記録</h3>
+          <p>日時・会場・アーティスト・感想・写真をまとめて記録。チケット画像のOCR入力にも対応。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎵</div>
+          <h3>セットリスト管理</h3>
+          <p>セトリを残してSNSへシェア。リハ・本編・アンコール対応。アーティスト別の統計まで自動集計。</p>
+        </div>
+        <div class="feature-card highlight">
+          <div class="feature-icon">🪑</div>
+          <h3>座席表マーク（NEW）</h3>
+          <p>武道館・横アリ等の主要会場の座席表でブロックを記録。シェア画像にも反映できます。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>統計・ヒートマップ</h3>
+          <p>月別参戦数・アーティスト別グラフ・GitHub風ヒートマップで参戦傾向を可視化。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💖</div>
+          <h3>思い出再生通知</h3>
+          <p>1ヶ月後・1年後にあの日のライブを思い出させる通知。タップで詳細を即座に表示。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3>公開セトリ・トーク</h3>
+          <p>セトリを共有してファン同士で繋がる。同行者管理・トーク・QRフレンド機能も搭載。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🗺️</div>
+          <h3>会場マップ・遠征履歴</h3>
+          <p>参戦した会場を地図にピン留め。都道府県別のヒートマップで遠征の記録を可視化。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔔</div>
+          <h3>ホーム画面ウィジェット</h3>
+          <p>次回ライブのカウントダウンをウィジェットで常時表示。タップで詳細画面へ。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== スクリーンショット ========== -->
+  <section id="screenshots" class="screenshots">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-label">SCREENSHOTS</span>
+        実際の画面を見てみる。
+      </h2>
+    </div>
+    <div class="screenshot-rail">
+      <div class="screenshot-track">
+        <figure class="phone"><img src="assets/screenshots/home.png" alt="ホーム画面" /><figcaption>ホーム</figcaption></figure>
+        <figure class="phone"><img src="assets/screenshots/setlist.png" alt="セットリスト" /><figcaption>セトリ管理</figcaption></figure>
+        <figure class="phone"><img src="assets/screenshots/stats.png" alt="統計画面" /><figcaption>統計</figcaption></figure>
+        <figure class="phone"><img src="assets/screenshots/ticket.png" alt="チケット画面" /><figcaption>ライブ詳細</figcaption></figure>
+        <figure class="phone"><img src="assets/screenshots/share.png" alt="シェア画面" /><figcaption>SNSシェア</figcaption></figure>
+        <figure class="phone"><img src="assets/screenshots/social.png" alt="ソーシャル" /><figcaption>公開セトリ</figcaption></figure>
+        <figure class="phone"><img src="assets/screenshots/widget.png" alt="ウィジェット" /><figcaption>ウィジェット</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 推しポイント ========== -->
+  <section id="why" class="why">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-label">WHY HIGH LIGHT!</span>
+        なぜ High Light! なのか。
+      </h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-num">01</div>
+          <h3>ライブ好きが、ライブ好きのために。</h3>
+          <p>ただの記録ではなく、参戦体験そのものを残すことに特化。チケット・セトリ・座席・感情を一画面に。</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">02</div>
+          <h3>シェアして繋がる。</h3>
+          <p>SNS向けの美しいシェア画像、公開セトリ、同行者管理、トーク機能。ファン同士のつながりを支えます。</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">03</div>
+          <h3>振り返って、また感動する。</h3>
+          <p>1年後の通知、ヒートマップ、月次グラフ。記録は溜めるほど豊かになります。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta">
+    <div class="container cta-inner">
+      <h2>近日リリース予定</h2>
+      <p>App Store 配信に向けて準備中です。最新情報は公式 𝕏 でお知らせします。</p>
+      <a href="https://x.com/highlight_lives" target="_blank" rel="noopener" class="btn btn-primary btn-large">
+        𝕏 @highlight_lives をフォロー
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== フッター ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/app-icon.png" alt="High Light!" />
+        <div>
+          <strong>High Light!</strong>
+          <span>ライブの記憶を、すべて残そう。</span>
+        </div>
+      </div>
+      <nav class="footer-nav">
+        <a href="#features">機能</a>
+        <a href="#screenshots">画面</a>
+        <a href="#why">魅力</a>
+        <a href="https://x.com/highlight_lives" target="_blank" rel="noopener">𝕏 公式</a>
+      </nav>
+      <p class="copy">© 2026 High Light! All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
