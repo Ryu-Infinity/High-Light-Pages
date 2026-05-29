@@ -513,7 +513,9 @@ a {
 }
 
 .spotlight-label {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-family: 'Inter', sans-serif;
   font-size: 13px;
   font-weight: 800;
@@ -523,6 +525,41 @@ a {
   border: 1.5px solid var(--pink);
   border-radius: var(--radius-pill);
   margin-bottom: 24px;
+}
+
+/* AI スポットライト専用：ホロ系のグラデで他と差別化 */
+.spotlight-label-ai {
+  background: var(--grad);
+  color: #fff;
+  border-color: transparent;
+}
+
+.badge-new {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  padding: 2px 6px;
+  background: #fff;
+  color: var(--pink);
+  border-radius: 4px;
+  line-height: 1.2;
+}
+
+/* AI スポットライト：背景に薄いグラデーション */
+.spotlight-ai {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 59, 154, 0.04) 0%,
+    rgba(139, 92, 246, 0.04) 100%
+  );
+  border-radius: var(--radius-lg);
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+@media (max-width: 880px) {
+  .spotlight-ai { padding-left: 20px; padding-right: 20px; }
 }
 
 .spotlight-title {
