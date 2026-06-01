@@ -646,8 +646,9 @@ a {
 .phone-tilt img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
+  background: #000;
 }
 
 /* ===== Features Extra（補助機能の小型グリッド） ===== */
