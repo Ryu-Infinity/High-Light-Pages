@@ -611,6 +611,13 @@ a {
   margin-right: 8px;
 }
 
+.spotlight-note {
+  margin-top: 16px;
+  font-size: 0.78rem;
+  color: rgba(20, 20, 40, 0.55);
+  letter-spacing: 0.02em;
+}
+
 /* スポットライトのスマホフレーム */
 .phone-tilt {
   position: relative;
